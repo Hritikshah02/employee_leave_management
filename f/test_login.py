@@ -22,3 +22,12 @@ def test_login():
         assert login(driver, "admin", "wrong") == "Invalid credentials"
     finally:
         driver.quit()
+
+# ---------------- STEPS (f) Web Application Testing Using Selenium ----------------
+# 1. pip install selenium pytest   (Chrome must be installed)
+# 2. login.html = employee portal login page (admin / admin123)
+# 3. Open page with webdriver.Chrome() and driver.get(URL)
+# 4. Fill username/password with find_element(By.ID, ...).send_keys()
+# 5. Click login, use WebDriverWait + expected_conditions (explicit wait)
+# 6. assert "Login successful" for valid, "Invalid credentials" for wrong password
+# 7. Run: cd f && pytest -v test_login.py

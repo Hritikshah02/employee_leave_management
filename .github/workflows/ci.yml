@@ -11,3 +11,8 @@ jobs:
         with:
           python-version: "3.11"
       - run: python b/leave_balance.py
+
+# ---------------- STEPS (b) ----------------
+# 1. Place this file at .github/workflows/ci.yml (repo root)
+# 2. Push any change to main -> workflow runs automatically
+# 3. GitHub > Actions tab > open run > check "Run python b/leave_balance.py" step
