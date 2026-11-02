@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Employee Portal Login</h2>
+  <input id="username" placeholder="Username">
+  <input id="password" type="password" placeholder="Password">
+  <button id="login" onclick="login()">Login</button>
+  <p id="msg"></p>
+  <script>
+    function login() {
+      var u = document.getElementById("username").value;
+      var p = document.getElementById("password").value;
+      setTimeout(function () {
+        document.getElementById("msg").innerText =
+          (u === "admin" && p === "admin123") ? "Login successful" : "Invalid credentials";
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
